@@ -1,0 +1,225 @@
+{
+  "environment": "Taxi-v3",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "configs": {
+    "0.1": {
+      "parameters": {
+        "alpha": 0.1,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.999,
+        "episodes": 12000
+      },
+      "validation": [
+        {
+          "mean_return": 7.58,
+          "std_return": 2.6951066769239396,
+          "mean_steps": 13.42,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        },
+        {
+          "mean_return": 7.58,
+          "std_return": 2.6951066769239396,
+          "mean_steps": 13.42,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        },
+        {
+          "mean_return": 7.58,
+          "std_return": 2.6951066769239396,
+          "mean_steps": 13.42,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        }
+      ]
+    },
+    "0.5": {
+      "parameters": {
+        "alpha": 0.5,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.999,
+        "episodes": 12000
+      },
+      "validation": [
+        {
+          "mean_return": 7.54,
+          "std_return": 2.761955828756137,
+          "mean_steps": 13.46,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        },
+        {
+          "mean_return": 7.56,
+          "std_return": 2.691913817342598,
+          "mean_steps": 13.44,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        },
+        {
+          "mean_return": 7.52,
+          "std_return": 2.7657910260900045,
+          "mean_steps": 13.48,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        }
+      ]
+    },
+    "0.9": {
+      "parameters": {
+        "alpha": 0.9,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.999,
+        "episodes": 12000
+      },
+      "validation": [
+        {
+          "mean_return": 7.58,
+          "std_return": 2.6951066769239396,
+          "mean_steps": 13.42,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        },
+        {
+          "mean_return": 7.52,
+          "std_return": 2.7802158189608233,
+          "mean_steps": 13.48,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        },
+        {
+          "mean_return": 7.54,
+          "std_return": 2.747435167569928,
+          "mean_steps": 13.46,
+          "success_rate": 1.0,
+          "mean_illegal": 0.0,
+          "episodes": 100
+        }
+      ]
+    }
+  },
+  "selection": {
+    "alpha": 0.1,
+    "seed": 0,
+    "criterion": "Highest mean validation return across three seeds; ties choose lower alpha. Deployment uses predeclared seed 0."
+  },
+  "test": {
+    "random": {
+      "mean_return": -773.024,
+      "std_return": 90.44825826957643,
+      "mean_steps": 197.618,
+      "success_rate": 0.042,
+      "mean_illegal": 64.032,
+      "episodes": 500
+    },
+    "0.1": [
+      {
+        "mean_return": 8.03,
+        "std_return": 2.552861139976086,
+        "mean_steps": 12.97,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      },
+      {
+        "mean_return": 8.03,
+        "std_return": 2.552861139976086,
+        "mean_steps": 12.97,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      },
+      {
+        "mean_return": 8.03,
+        "std_return": 2.552861139976086,
+        "mean_steps": 12.97,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      }
+    ],
+    "0.5": [
+      {
+        "mean_return": 7.994,
+        "std_return": 2.546755583089983,
+        "mean_steps": 13.006,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      },
+      {
+        "mean_return": 7.966,
+        "std_return": 2.5496752734416983,
+        "mean_steps": 13.034,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      },
+      {
+        "mean_return": 8.01,
+        "std_return": 2.56863777127099,
+        "mean_steps": 12.99,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      }
+    ],
+    "0.9": [
+      {
+        "mean_return": 8.03,
+        "std_return": 2.552861139976086,
+        "mean_steps": 12.97,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      },
+      {
+        "mean_return": 8.022,
+        "std_return": 2.5685630223920923,
+        "mean_steps": 12.978,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      },
+      {
+        "mean_return": 8.006,
+        "std_return": 2.559289745222295,
+        "mean_steps": 12.994,
+        "success_rate": 1.0,
+        "mean_illegal": 0.0,
+        "episodes": 500
+      }
+    ],
+    "selected": {
+      "mean_return": 8.03,
+      "std_return": 2.552861139976086,
+      "mean_steps": 12.97,
+      "success_rate": 1.0,
+      "mean_illegal": 0.0,
+      "episodes": 500
+    }
+  },
+  "demo": {
+    "seed": 40000,
+    "steps": 10,
+    "total_return": 11,
+    "success": true
+  }
+}
