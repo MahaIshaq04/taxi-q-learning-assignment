@@ -20,6 +20,7 @@ Run from the repository root:
 ```powershell
 .\.venv\Scripts\python.exe main.py all
 .\.venv\Scripts\python.exe build_notebook.py
+.\.venv\Scripts\python.exe build_word_report.py
 .\.venv\Scripts\python.exe main.py evaluate
 ```
 
@@ -33,7 +34,8 @@ Run from the repository root:
 | `assignment.ipynb` | Executed notebook with training progress and visualizations |
 | `artifacts/q_table.npy` | Selected 500 x 6 trained Q-table |
 | `artifacts/taxi_policy.gif` | Successful delivery using the learned policy |
-| `artifacts/technical_report.pdf` | Four-page technical report |
+| `artifacts/report.pdf` | Four-page submission report |
+| `artifacts/technical_report.docx` | Editable four-page Word report with output tables, plots and GIF frames |
 | `artifacts/learning_curves.png` | Convergence and sensitivity plots |
 | `artifacts/results.json` | Hyperparameters, seed information, raw aggregate metrics |
 | `artifacts/*_training.csv`, `*_validation.csv`, `*_q.npy` | Per-run logs, checkpoint metrics and models |
@@ -57,7 +59,7 @@ All nine trained policies achieved 100% test delivery success, with small differ
 
 ## Submission
 
-Review the executed notebook and PDF, add your name/student ID if required, and upload this folder's source and artifacts to your GitHub repository. Exclude `.venv` (already in `.gitignore`). Submit the GitHub URL and `artifacts/technical_report.pdf`. No remote repository or student identity was supplied, so publishing and identity fields are left to the submitter.
+Review the executed notebook and PDF, add your name/student ID if required, and submit https://github.com/MahaIshaq04/taxi-q-learning-assignment together with `artifacts/report.pdf`. The editable report is `artifacts/technical_report.docx`. Exclude `.venv` (already in `.gitignore`). Running `main.py all` regenerates the experiment PDF as `artifacts/technical_report.pdf`; the final submission PDF is `artifacts/report.pdf`.
 
 ## References
 
